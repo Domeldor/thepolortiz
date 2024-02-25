@@ -501,6 +501,7 @@ h1, h2, h3, h4, h5, h6, figure {
   clear: both;
 }
 .timeline > li > .timeline-panel {
+  background-color: white;
   width: 40%;
   float: left;
   border: 1px solid #d4d4d4;
@@ -839,6 +840,10 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-contact-info ul li.phone:before {
   font-size: 23px;
   content: "\e9f4";
+}
+.fh5co-contact-info ul li.user:before {
+  font-size: 23px;
+  content: "\ea36";
 }
 .fh5co-contact-info ul li.email:before {
   font-size: 23px;
@@ -1817,21 +1822,21 @@ form label {
 }
 
 .btn-danger {
-  background: #d9534f;
+  background: #F14E95;
   color: #fff;
-  border: 2px solid #d9534f;
+  border: 2px solid #F14E95;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-  background: #d43f3a !important;
-  border-color: #d43f3a !important;
+  background: #f186b4 !important;
+  border-color: #f186b4 !important;
 }
 .btn-danger.btn-outline {
   background: transparent;
-  color: #d9534f;
-  border: 2px solid #d9534f;
+  color: #F14E95;
+  border: 2px solid #F14E95;
 }
 .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
-  background: #d9534f;
+  background: #F14E95;
   color: #fff;
 }
 

@@ -838,6 +838,12 @@ h1, h2, h3, h4, h5, h6, figure {
 					content: "\e9f4";
 				}
 			}
+			&.user {
+				&:before {
+					font-size: 23px;
+					content: "\ea36";
+				}
+			}
 			&.email {
 				&:before {
 					font-size: 23px;
