@@ -83,13 +83,17 @@
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
 			var $this = $(this);
 
-			
+			$('.timeline').removeClass('fadeInUp')
+			$('.timeline').removeClass('animated-fast')
 			if ( $('body').hasClass('overflow offcanvas') ) {
 				$('body').removeClass('overflow offcanvas');
 			} else {
 				$('body').addClass('overflow offcanvas');
 			}
 			$this.toggleClass('active');
+
+
+
 			event.preventDefault();
 
 		});
@@ -174,16 +178,16 @@
 
 		$('.js-gosection').on('click', function(event){
 			$('body').removeClass('offcanvas');
-
+			$('body').removeClass('overflow');
+			$('.js-fh5co-nav-toggle').removeClass('active');
 			//you can do it by jquery. no matter
-			element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-
-			if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('body').removeClass('overflow');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
-	    	}
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function(){
+				window.location.hash = hash;
+			});
 
 			return false;
 		});
@@ -263,7 +267,7 @@
 		counter();
 		counterWayPoint();
 		goToSection();
-		smoothScroll();
+		//smoothScroll();
 
 	});
 
