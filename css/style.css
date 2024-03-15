@@ -1038,6 +1038,17 @@ form label {
     transform: scale(1);
   }
 }
+@keyframes pulse2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .simply-countdown > .simply-section > div {
   /* countdown block inner div */
   display: table-cell;
