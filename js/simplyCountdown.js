@@ -118,8 +118,8 @@
                 year: 2023,
                 month: 7,
                 day: 27,
-                hours: 0,
-                minutes: 0,
+                hours: 18,
+                minutes: 30,
                 seconds: 0,
                 words: {
                     days: 'Día',
